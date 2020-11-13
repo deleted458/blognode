@@ -44,7 +44,7 @@
         app.set('view engine', 'handlebars');
     //Mongoose
         mongoose.Promise - global.Promise
-        mongoose.connect("mongodb+srv://Matthew:fifo1234@meubot.bskkr.mongodb.net/MeuBot?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+        mongoose.connect("seu connection do mongo", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
             console.log("Conectado ao MongoDB")
         }).catch((err) => {
             console.log(`Deu erro: ${err}`)
