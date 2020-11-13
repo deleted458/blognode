@@ -1,0 +1,21 @@
+<div class="text-center">
+    <form action="/usuarios/login" method="POST"  class="needs-validation mt-5" style="width: 100%;max-width: 330px;padding: 15px;margin: auto;">
+    
+        {{#if error}}
+            <div class="alert alert-danger">{{this.error}}</div>
+        {{else}}
+
+        {{/if}}
+        <img class="mb-4 rounded" src="https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png " alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+
+        <label for="email" class="sr-only">Endereço de email</label>
+        <input type="email" name="email" class="form-control mt-1" placeholder="Email">
+        
+        <label for="senha" class="sr-only">Senha</label>
+        <input type="password" name="senha" class="form-control mt-1" placeholder="Senha">
+        
+        
+        <button class="btn shadow-lg btn-lg btn-primary btn-block mt-4" type="submit">Logar</button>
+</form>
+</div>
